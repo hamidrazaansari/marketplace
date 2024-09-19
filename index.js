@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 
 // MongoDB connection
 
-mongoose.connect('mongodb://0.0.0.0:27017/datadb').then(() => {
+mongoose.connect('mongodb+srv://hamidesta01:hamid.esta@cluster0.x5xkq.mongodb.net/datadb').then(() => {
   console.log('Connected to MongoDB');
 }).catch(err => console.error('MongoDB connection error:', err));
 
