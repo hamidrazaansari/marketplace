@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 
 // MongoDB connection
 
-mongoose.connect('mongodb+srv://hamidesta01:hamid.esta@cluster0.x5xkq.mongodb.net/datadb').then(() => {
+mongoose.connect('mongodb+srv://hamidesta01:hamid.esta@cluster0.x5xkq.mongodb.net/datadb?retryWrites=true&w=majority&appName=Cluster0' ).then(() => {
   console.log('Connected to MongoDB');
 }).catch(err => console.error('MongoDB connection error:', err));
 
